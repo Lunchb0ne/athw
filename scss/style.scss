@@ -10,7 +10,6 @@ html,body{
 }
 
 body{
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -54,10 +53,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
   white-space: pre-line;
   font-weight: 700;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
   line-height: 4.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
@@ -84,16 +85,15 @@ body {
         }
       }
     }
+    #subtext{
+      font-size: 1rem;
+      font-weight: 300;
+      float: left;
+      align-self: flex-start;
+      font-family: 'Sorce Sans Pro', sans-serif;
+      margin: 0;
+    }
   }
-}
-#subtext{
-  font-size: 1rem;
-  font-weight: 300;
-  color: white;
-  float: left;
-  padding-left: 15%;
-  font-family: 'Sorce Sans Pro', sans-serif;
-  padding-top: 20px;
 }
 
 #top{
