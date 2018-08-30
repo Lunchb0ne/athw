@@ -35,6 +35,7 @@ body {
 .main {
   white-space: pre-line;
   font-weight: 700;
+  padding-left: 6%;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
   text-decoration: none;
