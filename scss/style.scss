@@ -39,32 +39,28 @@ body {
 
 .main {
   white-space: pre-line;
-  text-align: center;
   font-weight: 700;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
   text-decoration: none;
-  padding-left: 1rem;
   #some {
     display: inline-block;
     text-align: left;
     font-size: 5rem;
-  }
-  #with-anim{
-    text-align: center;
-    background: linear-gradient(45deg, #dadadada 20%, $highlt 40%, $highlt 60%, #dadadada 80%);
-    background-size: 300% auto;
-    color: #000;
-    font-size: 4.5rem;
-    font-family: 'Oleo Script', cursive;
-    background-clip: text;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 10s ease infinite;
-    @keyframes gradient {
-      50% {
-        background-position: 100% 0;
+    #with-anim{
+      background: linear-gradient(45deg, #dadadada 20%, $highlt 40%, $highlt 60%, #dadadada 80%);
+      background-size: 300% auto;
+      color: #000;
+      font-family: 'Oleo Script', cursive;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient 10s ease infinite;
+      @keyframes gradient {
+        50% {
+          background-position: 100% 0;
+        }
       }
     }
   }
@@ -72,6 +68,7 @@ body {
 #bottom{
   a{
     color: #dadadada;
+    text-align: right;
   }
 }
 .hide {
