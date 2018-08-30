@@ -23,7 +23,7 @@
         else
           return currenticon;
       }();
-      $("#some").html("It's\nFucking "+currenttemp+"\n<span id=with-anim>"+cdt+"</span>\ntime");
+      $("#some").html("It's\nFucking "+currenttemp+"º\n and <span id=with-anim>"+cdt+"</span>\n"+"<span id=subtext>You don't want to see the weather do you?</span>");
   });
   }
   function error() {
@@ -31,7 +31,7 @@
   }
 }
   function parser(fcast){
-    $("#some").html("It's\nFucking\n<span id=with-anim>hi</span>\n");
+    $("#some").html("It's\nFucking\n<span id=with-anim>hi</span>\n"+"<span id=subtext>You don't want to see the weather do you?</span>");
     //use replace() subsitute for display
   }
   
