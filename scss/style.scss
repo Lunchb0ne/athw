@@ -1,26 +1,109 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Authentic Weather</title>
-        <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
-        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,900,700,600,200'>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="scss/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div id="top"><a href="https://darksky.net/poweredby/">Powered By DarkSky<a></div>
-            <div class="main">
-                <div id="some" >Fetching shit......</div>
+$dark: #ffffff;
+$color--primary: #7b00ff;
+$grad-1: #232526;
+$grad-2: #414345;
+$highlt: #FF0060;
 
-            </div>
-            <div id="subtext">You dont want to see the weather do you?</div>
-        </div>
-    </body>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-</html>
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+body {
+  //gradient bg
+  text-align: center;
+  background: linear-gradient(270deg,$grad-1, $grad-2);
+  opacity: 30;
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 92%}
+      50%{background-position:100% 9%}
+      100%{background-position:0% 92%}
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: pre-line;
+  font-weight: 700;
+  padding-left: 10%;
+  padding-right: 10%;
+  line-height: 4.8rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #dadadada;
+  text-decoration: none;
+  #some {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: inline-block;
+    text-align: left;
+    font-size: 4rem;
+    #with-anim{
+      background: linear-gradient(45deg, #dadadada 20%, $highlt 40%, $highlt 60%, #dadadada 80%);
+      background-size: 300% auto;
+      color: #000;
+      font-family: 'Oleo Script', cursive;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient 10s ease infinite;
+      @keyframes gradient {
+        50% {
+          background-position: 100% 0;
+        }
+      }
+    }
+  }
+}
+#subtext{
+  font-size: 15px;
+  color: white;
+  float: left;
+  padding-left: 10%;
+  font-family: 'Oleo Script', cursive;
+  padding-top: 20px;
+}
+
+#top{
+  a{
+    color: #dadadada;
+    position: fixed;
+    text-align: right;
+    top: 20px;
+    right: 50px;
+  }
+}
+.hide {
+  opacity: 0;
+}
