@@ -3,6 +3,18 @@ $color--primary: #7b00ff;
 $grad-1: #232526;
 $grad-2: #414345;
 $highlt: #FF0060;
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   //gradient bg
   text-align: center;
@@ -47,6 +59,7 @@ body {
   text-decoration: none;
   #some {
     padding-left: 8%;
+    padding-right: 8%;
     display: inline-block;
     text-align: left;
     font-size: 4rem;
