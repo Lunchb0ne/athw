@@ -52,18 +52,16 @@ body {
 .main {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   flex-direction: column;
   white-space: pre-line;
   font-weight: 700;
   padding-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
-  line-height: 4.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
-  text-decoration: none;
   #some {
+    line-height: 4.8rem;
     align-self: flex-start;
     display: inline-block;
     text-align: left;
@@ -74,7 +72,6 @@ body {
       color: #000;
       font-family: 'Oleo Script', cursive;
       background-clip: text;
-      text-fill-color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: gradient 10s ease infinite;
@@ -85,12 +82,8 @@ body {
       }
     }
     #subtext{
-      align-self: flex-start;
-      font-size: 15px;
-      color: white;
-      float: left;
+      font-size: 1rem;
       font-family: 'Source Sans', sans-serif;
-      margin: 0;
     }
   }
 }
