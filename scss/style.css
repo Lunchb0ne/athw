@@ -35,7 +35,6 @@ body {
 .main {
   white-space: pre-line;
   text-align: center;
-  padding-top: 12rem;
   font-weight: 700;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
@@ -45,7 +44,7 @@ body {
 .main #some {
   display: inline-block;
   text-align: left;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .main #with-anim {
@@ -73,6 +72,10 @@ body {
   50% {
     background-position: 100% 0;
   }
+}
+
+#bottom a {
+  color: #dadadada;
 }
 
 .hide {

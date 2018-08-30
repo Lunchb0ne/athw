@@ -40,7 +40,6 @@ body {
 .main {
   white-space: pre-line;
   text-align: center;
-  padding-top: 12rem;
   font-weight: 700;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
@@ -48,7 +47,7 @@ body {
   #some {
     display: inline-block;
     text-align: left;
-    font-size: 6rem;
+    font-size: 5rem;
   }
   #with-anim{
     text-align: center;
@@ -69,7 +68,11 @@ body {
     }
   }
 }
-
+#bottom{
+  a{
+    color: #dadadada;
+  }
+}
 .hide {
   opacity: 0;
 }
