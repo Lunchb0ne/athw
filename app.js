@@ -1,0 +1,1 @@
+$("#some").html("It's\nFucking\n<span id=with-anim>BBQ</span>\ntime");
