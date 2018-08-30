@@ -41,13 +41,15 @@ body {
   white-space: pre-line;
   font-weight: 700;
   padding-left: 6%;
+  line-height: 4.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
   text-decoration: none;
   #some {
+    padding-left: 8%;
     display: inline-block;
     text-align: left;
-    font-size: 5rem;
+    font-size: 4rem;
     #with-anim{
       background: linear-gradient(45deg, #dadadada 20%, $highlt 40%, $highlt 60%, #dadadada 80%);
       background-size: 300% auto;
@@ -66,10 +68,13 @@ body {
     }
   }
 }
-#bottom{
+#top{
   a{
     color: #dadadada;
+    position: fixed;
     text-align: right;
+    top:0px;
+    right: 10px;
   }
 }
 .hide {
