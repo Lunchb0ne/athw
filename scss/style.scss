@@ -64,8 +64,7 @@ body {
   color: #dadadada;
   text-decoration: none;
   #some {
-    padding-left: 8%;
-    padding-right: 8%;
+    align-self: flex-start;
     display: inline-block;
     text-align: left;
     font-size: 4rem;
@@ -86,11 +85,11 @@ body {
       }
     }
     #subtext{
-      font-size: 1rem;
-      font-weight: 300;
-      float: left;
       align-self: flex-start;
-      font-family: 'Sorce Sans Pro', sans-serif;
+      font-size: 15px;
+      color: white;
+      float: left;
+      font-family: 'Source Sans', sans-serif;
       margin: 0;
     }
   }
