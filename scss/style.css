@@ -36,15 +36,17 @@ body {
   white-space: pre-line;
   font-weight: 700;
   padding-left: 6%;
+  line-height: 4.8rem;
   font-family: 'Source Sans Pro', sans-serif;
   color: #dadadada;
   text-decoration: none;
 }
 
 .main #some {
+  padding-left: 8%;
   display: inline-block;
   text-align: left;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .main #some #with-anim {
@@ -72,9 +74,12 @@ body {
   }
 }
 
-#bottom a {
+#top a {
   color: #dadadada;
+  position: fixed;
   text-align: right;
+  top: 0px;
+  right: 10px;
 }
 
 .hide {
