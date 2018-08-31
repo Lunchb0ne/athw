@@ -533,8 +533,8 @@ allphrase =[
 ];
 
 function getphrase()
-    condition = SKIN:GetMeasure('MeasureIcon'):GetStringValue()
-    temp = SKIN:GetMeasure('MeasureTempC'):GetValue()
+    condition = cdt;
+    temp = ctemp;
     possiblePhrases = {}
     for k,v in ipairs(phrase) do
         if v['condition'] then

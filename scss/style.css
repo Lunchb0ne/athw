@@ -69,6 +69,15 @@ body {
   color: #dadadada;
 }
 
+.main #icons {
+  color: #dadadada;
+  font-weight: 400;
+  position: absolute;
+  text-align: left;
+  top: 10px;
+  left: 30px;
+}
+
 .main #some {
   line-height: 4.8rem;
   -ms-flex-item-align: start;
@@ -79,7 +88,7 @@ body {
 }
 
 .main #some #with-anim {
-  background: linear-gradient(45deg, #dadadada 20%, #FF0060 40%, #FF0060 60%, #dadadada 80%);
+  background: linear-gradient(45deg, #dadadada 20%, #000000 40%, #000000 60%, #dadadada 80%);
   background-size: 300% auto;
   color: #000;
   font-family: 'Oleo Script', cursive;
@@ -103,6 +112,12 @@ body {
 }
 
 .main #some #subtext {
+  display: inline-block;
+  -webkit-text-size-adjust: auto;
+     -moz-text-size-adjust: auto;
+      -ms-text-size-adjust: auto;
+          text-size-adjust: auto;
+  line-height: 1.3rem !important;
   font-size: 1rem;
   font-family: 'Source Sans', sans-serif;
 }
