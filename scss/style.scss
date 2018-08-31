@@ -1,5 +1,5 @@
 $dark: #ffffff;
-$color--primary: #7b00ff;
+$color--primary: #dadadada;
 $grad-1: #232526;
 $grad-2: #414345;
 $highlt: #FF0060;
@@ -59,7 +59,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #dadadada;
+  color: $color--primary;
   #some {
     line-height: 4.8rem;
     align-self: flex-start;
@@ -67,7 +67,7 @@ body {
     text-align: left;
     font-size: 4rem;
     #with-anim{
-      background: linear-gradient(45deg, #dadadada 20%, $highlt 40%, $highlt 60%, #dadadada 80%);
+      background: linear-gradient(45deg, $color--primary 20%, $highlt 40%, $highlt 60%, $color--primary 80%);
       background-size: 300% auto;
       color: #000;
       font-family: 'Oleo Script', cursive;
@@ -90,11 +90,12 @@ body {
 
 #top{
   a{
-    color: #dadadada;
-    position: fixed;
+    color: $color--primary;
+    font-weight: 400;
+    position: absolute;
     text-align: right;
-    top: 20px;
-    right: 50px;
+    top: 10px;
+    right: 30px;
   }
 }
 .hide {

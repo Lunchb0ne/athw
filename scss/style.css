@@ -109,10 +109,11 @@ body {
 
 #top a {
   color: #dadadada;
-  position: fixed;
+  font-weight: 400;
+  position: absolute;
   text-align: right;
-  top: 20px;
-  right: 50px;
+  top: 10px;
+  right: 30px;
 }
 
 .hide {
