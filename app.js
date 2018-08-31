@@ -631,9 +631,9 @@
     ph.title = ph.title.replace(ph.highlight,highlighted);
     processed = ph.title + "\n<span id=subtext>" + ph.subline + "</span>";
     console.log(ph.color);
-    var effcolor = 'linear-gradient(45deg, #dadadada 20%, #6A6A 40%, #6a6a 60%, #dadadada 80%)';
+    var effcolor = 'linear-gradient(45deg, #dadadada 20%, #'+ ph.color + ' 40%, #'+ ph.color + ' 60%, #dadadada 80%)';
     console.log(effcolor);
-    $("#with-anim").css({"background":'linear-gradient(45deg, #dadadada 20%, #6A6A 40%, #6a6a 60%, #dadadada 80%)'});
+    $("#with-anim").css({"background":effcolor});
     return processed;
   }
 })();
