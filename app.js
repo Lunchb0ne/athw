@@ -629,7 +629,7 @@
     var processed = "";
     var highlighted = "<span id=with-anim>"+ph.highlight+"</span>";
     ph.title = ph.title.replace(ph.highlight,highlighted);
-    processed = ph.title + "\n<span id=subtext>" + ph.subline + "</span>";
+    processed = ph.title + "\n<span id=subtext>\n" + ph.subline + "</span>";
     console.log(ph.color);
     var effcolor = 'linear-gradient(45deg, #dadadada 20%, #'+ ph.color + ' 40%, #'+ ph.color + ' 60%, #dadadada 80%)';
     console.log(effcolor);
