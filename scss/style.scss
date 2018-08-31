@@ -2,7 +2,7 @@ $dark: #ffffff;
 $color--primary: #dadadada;
 $grad-1: #232526;
 $grad-2: #414345;
-$highlt: #FF0060;
+$highlt: #000000;
 
 html,body{
   width: 100%;
@@ -60,6 +60,14 @@ body {
   padding-right: 10%;
   font-family: 'Source Sans Pro', sans-serif;
   color: $color--primary;
+  #icons {
+      color: $color--primary;
+      font-weight: 400;
+      position: absolute;
+      text-align: left;
+      top: 10px;
+      left: 30px;
+  }
   #some {
     line-height: 4.8rem;
     align-self: flex-start;
@@ -82,6 +90,9 @@ body {
       }
     }
     #subtext{
+      display: inline-block;
+      text-size-adjust: auto;
+      line-height: 1.3rem !important;
       font-size: 1rem;
       font-family: 'Source Sans', sans-serif;
     }
