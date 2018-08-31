@@ -1,24 +1,22 @@
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (orientation: landscape) {
   #some {
-    font-size: 17vh;
-    line-height: 17.3vh;
+    font-size: 16vh;
+    line-height: 16.3vh;
   }
   #subtext {
-    font-size: 3.2vh;
-    line-height: 3.3vh;
+    font-size: 2.2vh;
+    line-height: 2.3vh;
   }
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (orientation: portrait) {
   #some {
-    font-size: 22.1vw;
-    line-height: 22.3vw;
+    font-size: 21.1vw;
+    line-height: 21.3vw;
   }
   #subtext {
-    font-size: 4.3vw;
-    line-height: 4.8vw;
+    font-size: 3.9vw;
+    line-height: 4.0vw;
   }
 }
 
@@ -45,11 +43,11 @@ body {
   background: linear-gradient(270deg, #232526, #414345);
   opacity: 30;
   background-size: 400% 400%;
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: BGrad 30s ease infinite;
+  animation: BGrad 30s ease infinite;
 }
 
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes BGrad {
   0% {
     background-position: 0% 92%;
   }
@@ -61,7 +59,7 @@ body {
   }
 }
 
-@keyframes AnimationName {
+@keyframes BGrad {
   0% {
     background-position: 0% 92%;
   }
@@ -86,7 +84,7 @@ body {
           flex-direction: column;
   white-space: pre-line;
   font-weight: 700;
-  padding-top: 18%;
+  padding-top: 10%;
   padding-left: 8%;
   padding-right: 12%;
   font-family: 'Source Sans Pro', sans-serif;
@@ -110,7 +108,7 @@ body {
 }
 
 .main #some #with-anim {
-  background: linear-gradient(45deg, #dadadada 20%, #000000 40%, #000000 60%, #dadadada 80%);
+  background: linear-gradient(45deg, #dadadada 20%, #ffffff 40%, #ffffff 60%, #dadadada 80%);
   background-size: 300% auto;
   color: #000;
   font-family: 'Oleo Script', cursive;
@@ -148,7 +146,7 @@ body {
   right: 30px;
 }
 
-.hide {
-  opacity: 0;
+.test {
+  opacity: 0%;
 }
 /*# sourceMappingURL=style.css.map */
