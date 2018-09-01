@@ -26,6 +26,8 @@ html, body {
 }
 
 body {
+  -ms-touch-action: none;
+      touch-action: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +102,15 @@ body {
   left: 30px;
 }
 
+.main #loading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: inline-block;
+  text-align: left;
+  font-size: 15vmin;
+  line-height: 16vmin;
+}
+
 .main #some {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -148,5 +159,19 @@ body {
 
 .test {
   opacity: 0%;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 /*# sourceMappingURL=style.css.map */

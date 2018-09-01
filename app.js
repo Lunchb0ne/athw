@@ -1,4 +1,18 @@
 (function () {
+    (function randomload() {
+        var loadtext = [
+            "Influencing Weather...",
+            "Spinning up Weather Generator...",
+            "Fuck it,\nWe'll do it live",
+            "Bitch-Slapping Weather...",
+            "Sending a Weather Balloon..",
+            "Fucking with Weather...",
+            "Sacrificing a goat..."
+        ];
+        //$("#some").css(propertyName, value);
+        $("#loading").text(loadtext[Math.floor(Math.random()*loadtext.length)]);
+        $("#some").hide(0);
+    })();
     //Global Variables
     var ctemp;
     var cdt;
@@ -26,11 +40,16 @@
                     else
                         return currenticon;
                 }();
+                //hide loading
+                $("#loading").fadeOut(200);
                 //Construsct the phrase via the parser
                 cphrase = phrasemaker((parser(cdt, ctemp)));
                 $("#some").html(cphrase.title);
                 //set the color for the highlight
                 $("#with-anim").css({ "background-image": cphrase.effcolor});
+                setTimeout(function(){
+                    $("#some").fadeIn(600);
+                }, 300);
             });
         }
         function error() {
