@@ -31,9 +31,10 @@ html,body{
 }
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  touch-action: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 body {
@@ -89,6 +90,13 @@ body {
       top: 10px;
       left: 30px;
   }
+  #loading {
+    align-self: flex-start;
+    display: inline-block;
+    text-align: left;
+    font-size: 15vmin;
+    line-height: 16vmin;
+  }
   #some {
     align-self: flex-start;
     display: inline-block;
@@ -131,4 +139,12 @@ body {
 }
 .test {
   opacity: 0%;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
