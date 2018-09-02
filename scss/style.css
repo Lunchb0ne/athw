@@ -3,7 +3,7 @@
     font-size: 16vh;
     line-height: 16.3vh;
   }
-  #subtext {
+  #subtext, .main #loading #loadlong {
     font-size: 2.8vh;
     line-height: 3vh;
   }
@@ -14,7 +14,7 @@
     font-size: 21.1vw;
     line-height: 21.3vw;
   }
-  #subtext {
+  #subtext, .main #loading #loadlong {
     font-size: 3.9vw;
     line-height: 4.3vw;
   }
@@ -93,15 +93,6 @@ body {
   color: #dadadada;
 }
 
-.main #icons {
-  color: #dadadada;
-  font-weight: 400;
-  position: absolute;
-  text-align: left;
-  top: 10px;
-  left: 30px;
-}
-
 .main #loading {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -109,6 +100,10 @@ body {
   text-align: left;
   font-size: 15vmin;
   line-height: 16vmin;
+}
+
+.main #loading #loadlong {
+  display: none;
 }
 
 .main #some {
@@ -142,7 +137,7 @@ body {
   }
 }
 
-.main #some #subtext {
+.main #some #subtext, .main #some #loading #loadlong, .main #loading #some #loadlong {
   padding-top: 0% !important;
   display: block;
   font-family: 'Source Sans', sans-serif;

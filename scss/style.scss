@@ -82,20 +82,16 @@ body {
   padding-right: 12%;
   font-family: 'Source Sans Pro', sans-serif;
   color: $color--primary;
-  #icons {
-      color: $color--primary;
-      font-weight: 400;
-      position: absolute;
-      text-align: left;
-      top: 10px;
-      left: 30px;
-  }
   #loading {
     align-self: flex-start;
     display: inline-block;
     text-align: left;
     font-size: 15vmin;
     line-height: 16vmin;
+    #loadlong{
+      display: none;
+      @extend #subtext;
+    }
   }
   #some {
     align-self: flex-start;

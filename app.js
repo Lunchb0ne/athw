@@ -1,4 +1,5 @@
 (function () {
+    //This is where we get all the freshly baked loading messages
     (function randomload() {
         var loadtext = [
             "Influencing Weather...",
@@ -9,14 +10,28 @@
             "Fucking with Weather...",
             "Sacrificing a goat..."
         ];
-        //$("#some").css(propertyName, value);
-        $("#loading").text(loadtext[Math.floor(Math.random()*loadtext.length)]);
+        $("#loading").html(loadtext[Math.floor(Math.random()*loadtext.length)]);
+        //A sprkinle of user friendliness and animations
+        setTimeout(function(){
+            if (!loaded){
+                var zapsvg= '<svg xmlns="width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-zap-off"><polyline points="12.41 6.75 13 2 10.57 4.92"></polyline><polyline points="18.57 12.91 21 10 15.66 10"></polyline><polyline points="8 8 3 14 12 14 11 22 16 16"></polyline><line x1="1" y1="1" x2="23" y2="23"></line></svg>';
+                $("#loading").html($("#loading").html()+((navigator.geolocation)?("\n<span id=loadlong>\n\n"+zapsvg+" You might wanna refresh the page or check if location services are working</span>"):("\n<span id=loadlong>\n"+zapsvg+" Geolocation is not supported on your browser\nNetscape, is that you??</span>")));
+                $("#loading").fadeOut(100);
+                //The things I do for smooth animation
+                setTimeout(function(){
+                    $("#loadlong").fadeIn();
+                    $("#loading").fadeIn();
+                }, 150);
+        }
+        }, 5000);
+        //This hides the #some id, as the code says, I really don't know why I wrote this comment, so now if you're still reading this, you're wasting your time.......... really
         $("#some").hide(0);
     })();
     //Global Variables
     var ctemp;
     var cdt;
     var cphrase;
+    var loaded =false;
     //Weather Function
     function weather() {
         //Some basic stuff
@@ -32,7 +47,7 @@
             currenticon = "";
             //request for the json for weather
             $.getJSON(proxy + url + apiKey + '/' + latitude + ',' + longitude + '?' + "units=si", function (forecast) {
-                console.log(forecast.currently);
+                loaded = true;
                 currenticon = forecast.currently.icon;
                 ctemp = Math.round(forecast.currently.apparentTemperature);
                 cdt = function (currenticon) {
@@ -56,7 +71,7 @@
             });
         }
         function error() {
-            some.innerHTML = "Unable to retrieve your location";
+            $("#loading").html = "Unable to retrieve your location";
         }
     }
     //Parser starts here
