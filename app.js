@@ -61,7 +61,7 @@
                 //hide loading
                 $("#loading").fadeOut(200);
                 //Construsct the phrase via the parser
-                cphrase = phrasemaker((parser("gg", ctemp)));
+                cphrase = phrasemaker((parser(cdt, ctemp)));
                 $("#some").html(cphrase.title);
                 //set the color for the highlight
                 $("#with-anim").css({ "background-image": cphrase.effcolor});
