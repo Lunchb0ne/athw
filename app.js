@@ -23,7 +23,7 @@
                     $("#loading").fadeIn();
                 }, 150);
         }
-        }, 5000);
+        }, 10000);
         //This hides the #some id, as the code says, I really don't know why I wrote this comment, so now if you're still reading this, you're wasting your time.......... really
         $("#some").hide(0);
     })();
@@ -61,7 +61,7 @@
                 //hide loading
                 $("#loading").fadeOut(200);
                 //Construsct the phrase via the parser
-                cphrase = phrasemaker((parser(cdt, ctemp)));
+                cphrase = phrasemaker((parser("gg", ctemp)));
                 $("#some").html(cphrase.title);
                 //set the color for the highlight
                 $("#with-anim").css({ "background-image": cphrase.effcolor});
@@ -103,8 +103,8 @@
             {
                 highlight: "god",
                 title: "Where's your \ngod now?",
-                subline: "Oh wait..",
-                condition: "rain",
+                subline: "Oh wait\nwrong app......",
+                condition: "gg",
                 color: ["#f8ffae","#43c6ac"]
             },
             {
