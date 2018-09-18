@@ -53,6 +53,8 @@
                 cdt = function (currenticon) {
                     if (currenticon === "partly-cloudy-day" || currenticon === "partly-cloudy-night")
                         {return "cloudy";}
+                    else if (currenticon === "clear-day" || currenticon === "clear-night")
+                        {return "clear";}
                     else
                         {return currenticon;}
                 }(currenticon);
