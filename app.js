@@ -38,7 +38,7 @@
         var location = document.getElementById("location");
         var apiKey = "***REMOVED***";
         var url = "https://api.forecast.io/forecast/";
-        var proxy = "https://cors-anywhere.herokuapp.com/"
+//         var proxy = "https://cors-anywhere.herokuapp.com/"
         navigator.geolocation.getCurrentPosition(success, error);
         //for geolocation succ
         function success(position) {
@@ -46,7 +46,7 @@
             longitude = position.coords.longitude;
             currenticon = "";
             //request for the json for weather
-            $.getJSON(proxy + url + apiKey + '/' + latitude + ',' + longitude + '?' + "units=si", function (forecast) {
+            $.getJSON(url + apiKey + '/' + latitude + ',' + longitude + '?' + "units=si", function (forecast) {
                 loaded = true;
                 currenticon = forecast.currently.icon;
                 ctemp = Math.round(forecast.currently.apparentTemperature);
