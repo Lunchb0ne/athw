@@ -46,7 +46,7 @@
             longitude = position.coords.longitude;
             currenticon = "";
             //request for the json for weather
-            $.getJSON(url + apiKey + '/' + latitude + ',' + longitude + '?' + "units=si", function (forecast) {
+            $.getJSON(url + apiKey + '/' + latitude + ',' + longitude + '?' + "units=sicallback=?", function (forecast) {
                 loaded = true;
                 currenticon = forecast.currently.icon;
                 ctemp = Math.round(forecast.currently.apparentTemperature);
